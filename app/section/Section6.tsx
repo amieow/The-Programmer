@@ -14,7 +14,7 @@ export default function Section6() {
                Useful <span className=' text-primary'>{`{software}`}</span> that can assist.
             </Title>
             <div className='flex flex-col relative w-screen max-w-[1440px] overflow-x-hidden'>
-               <div className=' absolute top-0 right-0 h-full w-1/4 bg-cardSuport -rotate-180 z-10'></div>
+               <div className=' absolute top-0 -right-1 h-full w-1/4 bg-cardSuport -rotate-180 z-10'></div>
                <CompanySlider length={CompanyLength} direction="right"/>
                <CompanySlider length={CompanyLength} direction='left'/>
                <div className=' absolute top-0 left-0 h-full w-1/4 bg-cardSuport '>CC</div>

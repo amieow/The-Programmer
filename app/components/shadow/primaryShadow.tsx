@@ -1,5 +1,5 @@
 
-export default function PrimaryShadow({blur,className = ""} : {blur : boolean , className? : string}) {
+export default function PrimaryShadow({blur,className = ""} : {blur? : boolean , className? : string}) {
    return (
       <>
       {blur ? <div className={` bg-primary absolute top-0 -z-10 bg-opacity-80 w-full h-full rounded-2xl blur-3xl ${className}`}></div> 

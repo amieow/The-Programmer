@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import HeroSection from './section/Hero'
 import Section2 from './section/Section2'
 import Section3 from './section/Section3'
@@ -8,11 +8,11 @@ import Section6 from './section/Section6'
 import Section7 from './section/Section7'
 import Navbar from './section/Navbar'
 import Footer from './section/Footer'
-
+import { Suspense } from 'react'
 
 export default function Home() {
   return (
-    <>
+    <Suspense fallback>
     <Navbar/>
       <div className=' flex flex-col w-full max-w-[1480px] gap-26 mx-auto'>
         <HeroSection/>
@@ -24,6 +24,6 @@ export default function Home() {
         <Section7/>
       </div>
       <Footer/>
-    </>
+    </Suspense>
   )
 }

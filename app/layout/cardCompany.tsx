@@ -1,9 +1,9 @@
 import React from 'react'
 import DefaultButton from '../components/button/defaultButton'
 
-export default function CardCompany({children,key} : {children : React.ReactNode,key : string | number}) {
+export default function CardCompany({children,index} : {children : React.ReactNode,index : string | number | undefined}) {
    return (
-      <div key={key} className=' relative flex flex-shrink-0 bg-editors'>
+      <div key={index || ("RandomSSTR - " + String(Math.random() * 50))} className=' relative flex flex-shrink-0 bg-editors'>
          <DefaultButton className=' border-4 p-4 lg:p-10  w-60 border-white'>
             {children}
          </DefaultButton>
